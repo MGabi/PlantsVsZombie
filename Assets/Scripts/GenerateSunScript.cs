@@ -6,11 +6,13 @@ public class GenerateSunScript : MonoBehaviour {
 
     public GameObject prefab;
 
-    // Use this for initialization
-    void Start () {
+    public void Start()
+    {
         InvokeRepeating("Spawn", 10, 10);
-
     }
+        
+    
+
 
     void Spawn()
     {

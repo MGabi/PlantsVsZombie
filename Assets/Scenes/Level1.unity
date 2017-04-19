@@ -511,7 +511,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 153862364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24, y: 5.1, z: 0}
+  m_LocalPosition: {x: 1.08, y: 5.07, z: 0}
   m_LocalScale: {x: 0.8428794, y: 0.6857591, z: 1}
   m_Children: []
   m_Father: {fileID: 713079916}
@@ -759,11 +759,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4730567570011738, guid: 6e06f016eeeb3994dbef2746b958f266, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.34955406
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 4730567570011738, guid: 6e06f016eeeb3994dbef2746b958f266, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.1424074
+      value: 5.11
       objectReference: {fileID: 0}
     - target: {fileID: 4730567570011738, guid: 6e06f016eeeb3994dbef2746b958f266, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2071,11 +2071,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4013829469048650, guid: f51749016fdc13e4794c8ec78bf9b7b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.36
+      value: -0.46
       objectReference: {fileID: 0}
     - target: {fileID: 4013829469048650, guid: f51749016fdc13e4794c8ec78bf9b7b5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.18
+      value: 5.13
       objectReference: {fileID: 0}
     - target: {fileID: 4013829469048650, guid: f51749016fdc13e4794c8ec78bf9b7b5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2738,6 +2738,7 @@ GameObject:
   - component: {fileID: 1333068860}
   - component: {fileID: 1333068859}
   - component: {fileID: 1333068858}
+  - component: {fileID: 1333068863}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2815,6 +2816,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1333068863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333068857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d17a29df9c3b78439fe233c4baceb24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1812586927107178, guid: 2f9cfc825cf61d9438035379aff483f1, type: 2}
 --- !u!1 &1349747686
 GameObject:
   m_ObjectHideFlags: 0

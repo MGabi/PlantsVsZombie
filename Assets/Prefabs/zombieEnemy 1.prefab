@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50646577385492916}
   - component: {fileID: 61925130390206592}
   - component: {fileID: 114246302269737642}
+  - component: {fileID: 114896461440426390}
   m_Layer: 0
   m_Name: zombieEnemy 1
   m_TagString: Untagged
@@ -115,6 +116,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: -1
   speed: 0.007
+--- !u!114 &114896461440426390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1058214643195356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b474dc1675dbc49a60c3219d1920c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 2
 --- !u!212 &212569306477472018
 SpriteRenderer:
   m_ObjectHideFlags: 1

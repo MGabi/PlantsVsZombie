@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61481391028638446}
   - component: {fileID: 114114490331093284}
   - component: {fileID: 50273987622229822}
+  - component: {fileID: 114336980833328812}
   m_Layer: 0
   m_Name: BomberPlant
   m_TagString: Untagged
@@ -118,7 +119,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1074058047785782, guid: 14a4b68d324b9bc4ab478c87e2423daf, type: 2}
-  interval: 5
+  interval: 2
+--- !u!114 &114336980833328812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1725611722076490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9390847d0fd634f40b186dfda740aefd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 4
+  isEnemy: 0
 --- !u!212 &212173657431090746
 SpriteRenderer:
   m_ObjectHideFlags: 1
