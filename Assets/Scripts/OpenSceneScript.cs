@@ -4,9 +4,7 @@ using UnityEngine;
 
 
 public class OpenSceneScript : MonoBehaviour {
-	public string sceneName;
-
-	void Start () {
+	public void openScene(string sceneName){
 		Application.LoadLevel (sceneName);
 	}
 }
