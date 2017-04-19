@@ -7,6 +7,8 @@ public class GlobalVariables : MonoBehaviour {
     public static int score = 100;
     public static int[][] Matrix;
 
+
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void OnBeforeSceneLoadRuntimeMethod()
     {
