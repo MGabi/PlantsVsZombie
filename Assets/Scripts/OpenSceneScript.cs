@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class OpenSceneScript : MonoBehaviour {
-	public void openScene(string sceneName){
-		Application.LoadLevel (sceneName);
-	}
+namespace UnityEngine {
+    public class OpenSceneScript : MonoBehaviour {
+        public void openScene(string sceneName) {
+            SceneManagement.SceneManager.LoadScene(sceneName);
+        }
+    }
 }
