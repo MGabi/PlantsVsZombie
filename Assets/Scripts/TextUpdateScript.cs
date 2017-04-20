@@ -13,6 +13,5 @@ public class TextUpdateScript : MonoBehaviour
     {
         scoreText = GetComponent<Text>();
         scoreText.text = "Score : " + GlobalVariables.score.ToString();
-
     }
 }

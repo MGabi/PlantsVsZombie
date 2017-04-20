@@ -6,9 +6,6 @@ public class GlobalVariables : MonoBehaviour {
 
     public static int score = 100;
     public static int[][] Matrix;
-    public static int[][] ZombieMatrix;
-
-
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void OnBeforeSceneLoadRuntimeMethod()
@@ -19,15 +16,6 @@ public class GlobalVariables : MonoBehaviour {
             Matrix[i] = new int[10];
             for (int j = 0; j < 10; j++)
                 Matrix[i][j] = 0;
-        }
-
-        ZombieMatrix = new int[5][];
-        for(int i=0;i<5;i++)
-        {
-            ZombieMatrix[i] = new int[2];
-            for (int j = 0; j < 1; j++)
-                ZombieMatrix[i][j] = i;
-            ZombieMatrix[i][1] = 3+i;
         }
     }
 
