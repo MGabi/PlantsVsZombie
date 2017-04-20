@@ -18,7 +18,9 @@ public class HelperClass : MonoBehaviour
 
 	private static string filePath;
 
-	void Awake()
+    
+
+        void Awake()
 	{
 		//setNameInTextBox();
 		if (instance == null)
@@ -35,7 +37,7 @@ public class HelperClass : MonoBehaviour
 		filePath = Directory.GetCurrentDirectory();
 		filePath = Directory.GetDirectoryRoot(filePath);
 		filePath = filePath + "//UserData//userdetails.txt";*/
-		filePath = "E://OtherProjects//PlantsVsZombie//Assets//UserData//userDetails.txt";
+		filePath = "D:\\OtherProjects\\PlantsVsZombie\\Assets\\UserData\\userDetails.txt";
 		try
 		{
 			using (StreamReader sr = File.OpenText(filePath))
@@ -62,8 +64,12 @@ public class HelperClass : MonoBehaviour
 
 	public void setNameInTextBox(string s)
 	{
-		Text textName = GameObject.Find("Canvas/nameText").GetComponent<Text>();
-		textName.text = getPlayerName();
+        if(GameObject.FindWithTag("nameText").GetComponent<Text>() != null)
+        {
+            Text textName = GameObject.FindWithTag("nameText").GetComponent<Text>();
+            textName.text = getPlayerName();
+        }
+        
 	}
 
 	public void saveData()
