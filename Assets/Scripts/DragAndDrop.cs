@@ -20,7 +20,7 @@ public class DragAndDrop : MonoBehaviour
         if (GlobalVariables.score >= price)
         {
             bought = true;
-
+            
             Instantiate(this.gameObject, this.transform.position, Quaternion.identity);
             GlobalVariables.score -= price;
             screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
@@ -49,15 +49,15 @@ public class DragAndDrop : MonoBehaviour
     {
         if (bought == true)
         {
-            if (this.transform.position.x >= 0 &&
-                this.transform.position.x <= 9 &&
-                this.transform.position.y >= 0 &&
-                this.transform.position.x <= 4 &&
-                GlobalVariables.Matrix[(int)transform.position.y][(int)transform.position.x] == 0)
+            if (this.transform.position.x + this.transform.lossyScale.x/2 >= 0 &&
+                this.transform.position.x - this.transform.lossyScale.x/2 <= 9 &&
+                this.transform.position.y + this.transform.lossyScale.y/2 >= 0 &&
+                this.transform.position.y - this.transform.lossyScale.y/2 <= 4 &&
+                GlobalVariables.Matrix[(int)Camera.main.ScreenToWorldPoint(Input.mousePosition).y][(int)Camera.main.ScreenToWorldPoint(Input.mousePosition).x] == 0)
             {
-
-                GlobalVariables.Matrix[(int)transform.position.y][(int)transform.position.x] = 1;
-                this.transform.position = new Vector3((int)transform.position.x, (int)transform.position.y, transform.position.z);
+                GlobalVariables.Matrix[(int)Camera.main.ScreenToWorldPoint(Input.mousePosition).y][(int)Camera.main.ScreenToWorldPoint(Input.mousePosition).x] = 1;
+                //GlobalVariables.Matrix[(int)(transform.position.y + this.transform.lossyScale.y / 2)][(int)(transform.position.x + this.transform.lossyScale.x / 2)] = 1;
+                this.transform.position = new Vector3((int)(Camera.main.ScreenToWorldPoint(Input.mousePosition).x),(int)(Camera.main.ScreenToWorldPoint(Input.mousePosition).y), transform.position.z);
                 Instantiate(prefab, this.transform.position, Quaternion.identity);
                 Destroy(this.gameObject);
 
