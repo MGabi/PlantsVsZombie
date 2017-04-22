@@ -10,6 +10,11 @@ namespace UnityEngine
 		private static string blackOverlayColor = "#969696FF";
 		private static string whiteOverlayColor = "#FFFFFFFF";
 
+		private static int PRICE_BOMB = 1000;
+		private static int PRICE_WALL = 2000;
+		private static int PRICE_FREEZE = 4000;
+		private static int PRICE_EXPLODE = 10000;
+
 		#region Variable declaration
 		private Button btnSUN;
 		private Button btnSHOOTER;
@@ -64,7 +69,7 @@ namespace UnityEngine
 
 		private void setImgBomb()
 		{
-			if (HelperClass.FLOWER_BOMB)
+			if (System.Convert.ToBoolean(PlayerPrefs.GetString(HelperClass.PREF_F_BOMB)))
 			{
 				btnBOMB.GetComponentInChildren<Text>().text = "OWNED";
 				imgBOMB.color = toColor(whiteOverlayColor);
@@ -78,7 +83,7 @@ namespace UnityEngine
 
 		private void setImgWall()
 		{
-			if (HelperClass.FLOWER_WALL)
+			if (System.Convert.ToBoolean(PlayerPrefs.GetString(HelperClass.PREF_F_WALL)))
 			{
 				btnWALL.GetComponentInChildren<Text>().text = "OWNED";
 				imgWALL.color = toColor(whiteOverlayColor);
@@ -92,7 +97,7 @@ namespace UnityEngine
 
 		private void setImgFreeze()
 		{
-			if (HelperClass.FLOWER_FREEZE)
+			if (System.Convert.ToBoolean(PlayerPrefs.GetString(HelperClass.PREF_F_FREEZE)))
 			{
 				btnFREEZE.GetComponentInChildren<Text>().text = "OWNED";
 				imgFREEZE.color = toColor(whiteOverlayColor);
@@ -106,7 +111,7 @@ namespace UnityEngine
 
 		private void setImgExplode()
 		{
-			if (HelperClass.FLOWER_EXPLODE)
+			if (System.Convert.ToBoolean(PlayerPrefs.GetString(HelperClass.PREF_F_EXPLODE)))
 			{
 				btnEXPLODE.GetComponentInChildren<Text>().text = "OWNED";
 				imgEXPLODE.color = toColor(whiteOverlayColor);
@@ -120,26 +125,74 @@ namespace UnityEngine
 
 		private void onClickBOMB()
 		{
-			HelperClass.instance.setBOMB(true);
-			setImgBomb();
+			if (!System.Convert.ToBoolean(PlayerPrefs.GetString(HelperClass.PREF_F_BOMB)))
+			{
+				int bal = System.Int32.Parse(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
+				if (bal - PRICE_BOMB >= 0)
+				{
+					Debug.Log("Bought bomb");
+					Debug.Log("Price " + PRICE_BOMB);
+					PlayerPrefs.SetString(HelperClass.PREF_BALANCE, (bal - PRICE_BOMB).ToString());
+					PlayerPrefs.SetString(HelperClass.PREF_F_BOMB, "true");
+					PlayerPrefs.Save();
+					Debug.Log(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
+					setImgBomb();
+				}
+			}
 		}
 
 		private void onClickWALL()
 		{
-			HelperClass.instance.setWALL(true);
-			setImgWall();
+			if (!System.Convert.ToBoolean(PlayerPrefs.GetString(HelperClass.PREF_F_WALL)))
+			{
+				int bal = System.Int32.Parse(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
+				if (bal - PRICE_WALL >= 0)
+				{
+					Debug.Log("Bought wall");
+					Debug.Log("Price " + PRICE_WALL);
+					PlayerPrefs.SetString(HelperClass.PREF_BALANCE, (bal - PRICE_WALL).ToString());
+					PlayerPrefs.SetString(HelperClass.PREF_F_WALL, "true");
+					PlayerPrefs.Save();
+					Debug.Log(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
+					setImgWall();
+				}
+			}
 		}
 
 		private void onClickFREEZE()
 		{
-			HelperClass.instance.setFREEZE(true);
-			setImgFreeze();
+			if (!System.Convert.ToBoolean(PlayerPrefs.GetString(HelperClass.PREF_F_FREEZE)))
+			{
+				int bal = System.Int32.Parse(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
+				if (bal - PRICE_FREEZE >= 0)
+				{
+					Debug.Log("Bought freeze");
+					Debug.Log("Price " + PRICE_FREEZE);
+					PlayerPrefs.SetString(HelperClass.PREF_BALANCE, (bal - PRICE_FREEZE).ToString());
+					PlayerPrefs.SetString(HelperClass.PREF_F_FREEZE, "true");
+					PlayerPrefs.Save();
+					Debug.Log(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
+					setImgFreeze();
+				}
+			}
 		}
 
 		private void onClickEXPLODE()
 		{
-			HelperClass.instance.setEXPLODE(true);
-			setImgExplode();
+			if (!System.Convert.ToBoolean(PlayerPrefs.GetString(HelperClass.PREF_F_EXPLODE)))
+			{
+				int bal = System.Int32.Parse(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
+				if (bal - PRICE_EXPLODE >= 0)
+				{
+					Debug.Log("Bought explode");
+					Debug.Log("Price " + PRICE_EXPLODE);
+					PlayerPrefs.SetString(HelperClass.PREF_BALANCE, (bal - PRICE_EXPLODE).ToString());
+					PlayerPrefs.SetString(HelperClass.PREF_F_EXPLODE, "true");
+					PlayerPrefs.Save();
+					Debug.Log(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
+					setImgExplode();
+				}
+			}
 		}
 
 		public Color toColor(string hex)

@@ -20,10 +20,10 @@ public class StartLevel : MonoBehaviour {
 		//levelMatrix = LevelsMatrix.levelOne;
 		if (levelID.Equals(LEVEL_1))
 			levelMatrix = LevelsMatrix.levelOne;
-		StartCoroutine(spawnZombies());
+		StartCoroutine(SpawnZombies());
 	}
 
-	IEnumerator spawnZombies()
+	IEnumerator SpawnZombies()
 	{
 		yield return new WaitForSeconds(levelMatrix[i][0]);
 		Spawn();
@@ -34,7 +34,7 @@ public class StartLevel : MonoBehaviour {
         Instantiate(pref1, new Vector3(9, levelMatrix[i][1], 0), Quaternion.identity);
         i++;
 		if(i < levelMatrix.Length)
-		StartCoroutine(spawnZombies());
+		StartCoroutine(SpawnZombies());
     }
 	
 	

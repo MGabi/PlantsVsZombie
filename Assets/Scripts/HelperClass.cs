@@ -15,15 +15,15 @@ public class HelperClass : MonoBehaviour
 	public static bool FLOWER_FREEZE = false;
 	public static bool FLOWER_EXPLODE = false;
 
-	private static int ROWS_IN_TXT_FILE = 9;
-
-	private static string playerName;
-	private static int playerBalance;
-	private static int playerFinalScore;
-
-	private static string[] fileContent;
-
-	private static string filePath;
+	public static string PREF_NAME = "ID_NAME";
+	public static string PREF_FINALSCORE = "ID_FINALSCORE";
+	public static string PREF_BALANCE = "ID_BALANCE";
+	public static string PREF_F_SUN = "ID_F_SUN";
+	public static string PREF_F_SHOOTER = "ID_F_SHOOTER";
+	public static string PREF_F_BOMB = "ID_F_BOMB";
+	public static string PREF_F_WALL = "ID_F_WALL";
+	public static string PREF_F_FREEZE = "ID_F_FREEZE";
+	public static string PREF_F_EXPLODE = "ID_F_EXPLODE";
 
 	void Awake()
 	{
@@ -32,124 +32,45 @@ public class HelperClass : MonoBehaviour
 			instance = this;
 		else if (instance != this)
 			Destroy(gameObject);
-		DontDestroyOnLoad(gameObject);
-		readData();
+		initData();
 	}
 
-	public void readData()
+	public void initData()
 	{
-		fileContent = new string[9];
-		//filePath = "E://OtherProjects//PlantsVsZombie//Assets//UserData//userDetails.txt";
-		filePath = Directory.GetCurrentDirectory() + "//Assets//UserData//userDetails.txt";
-		try
-		{
-			using (StreamReader sr = File.OpenText(filePath))
-			{
-				string s = string.Empty;
-				for (int i = 0; i < ROWS_IN_TXT_FILE; i++)
-				{
-					s = sr.ReadLine();
-					fileContent[i] = s;
-					if (i == 0)
-						setPlayerName(s);
-					else if (i == 1)
-						setPlayerFinalScore(System.Int32.Parse(s));
-					else if (i == 2)
-						setPlayerBalance(System.Int32.Parse(s));
-					else if (i == 3)
-						FLOWER_SUN = System.Boolean.Parse(s);
-					else if (i == 4)
-						FLOWER_SHOOTER = System.Boolean.Parse(s);
-					else if (i == 5)
-						FLOWER_BOMB = System.Boolean.Parse(s);
-					else if (i == 6)
-						FLOWER_WALL = System.Boolean.Parse(s);
-					else if (i == 7)
-						FLOWER_FREEZE = System.Boolean.Parse(s);
-					else if (i == 8)
-						FLOWER_EXPLODE = System.Boolean.Parse(s);
-				}
-			}
-		}catch(System.Exception e)
-		{
-			
-		}
-	}
+		//PlayerPrefs.DeleteAll();
+		if (!PlayerPrefs.HasKey(PREF_NAME))
+			PlayerPrefs.SetString(PREF_NAME, "Name");
 
-	public void setNameInTextBox(string s)
-	{
-		Text textName = GameObject.Find("Canvas/nameText").GetComponent<Text>();
-		textName.text = s;
+		if (!PlayerPrefs.HasKey(PREF_FINALSCORE))
+			PlayerPrefs.SetString(PREF_FINALSCORE, "0");
+
+		if (!PlayerPrefs.HasKey(PREF_BALANCE))
+			PlayerPrefs.SetString(PREF_BALANCE, "0");
+
+		if (!PlayerPrefs.HasKey(PREF_F_SUN))
+			PlayerPrefs.SetString(PREF_F_SUN, "true");
+
+		if (!PlayerPrefs.HasKey(PREF_F_SHOOTER))
+			PlayerPrefs.SetString(PREF_F_SHOOTER, "true");
+
+		if (!PlayerPrefs.HasKey(PREF_F_BOMB))
+			PlayerPrefs.SetString(PREF_F_BOMB, "false");
+
+		if (!PlayerPrefs.HasKey(PREF_F_WALL))
+			PlayerPrefs.SetString(PREF_F_WALL, "false");
+
+		if (!PlayerPrefs.HasKey(PREF_F_FREEZE))
+			PlayerPrefs.SetString(PREF_F_FREEZE, "false");
+
+		if (!PlayerPrefs.HasKey(PREF_F_EXPLODE))
+			PlayerPrefs.SetString(PREF_F_EXPLODE, "false");
+
+		PlayerPrefs.Save();
 	}
 
 	public void saveData()
 	{
-		System.IO.File.WriteAllText(filePath, string.Empty);
-		using (StreamWriter sw = File.AppendText(filePath))
-		{
-			for(int i=0; i<ROWS_IN_TXT_FILE; i++)
-			{
-				sw.WriteLine(fileContent[i]);
-			}
-		}
-	}
-
-	public void setBOMB(bool value)
-	{
-		FLOWER_BOMB = value;
-		fileContent[5] = value.ToString().ToLower();
-		saveData();
-	}
-
-	public void setWALL(bool value)
-	{
-		FLOWER_WALL = value;
-		fileContent[6] = value.ToString().ToLower();
-		saveData();
-	}
-
-	public void setFREEZE(bool value)
-	{
-		FLOWER_FREEZE = value;
-		fileContent[7] = value.ToString().ToLower();
-		saveData();
-	}
-
-	public void setEXPLODE(bool value)
-	{
-		FLOWER_EXPLODE = value;
-		fileContent[8] = value.ToString().ToLower();
-		saveData();
-	}
-
-	public int getPlayerFinalScore()
-	{
-		return playerFinalScore;
-	}
-
-	public void setPlayerFinalScore(int score)
-	{
-		playerFinalScore = score;
-	}
-
-	public int getPlayerBalance()
-	{
-		return playerBalance;
-	}
-
-	public void setPlayerBalance(int balance)
-	{
-		playerBalance = balance;
-	}
-
-	public string getPlayerName()
-	{
-		return playerName;
-	}
-
-	public void setPlayerName(string name)
-	{
-		playerName = name;
+		PlayerPrefs.Save();
 	}
 }
 
