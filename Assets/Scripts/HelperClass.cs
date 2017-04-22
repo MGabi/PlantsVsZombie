@@ -38,7 +38,7 @@ public class HelperClass : MonoBehaviour
 
 	public void initData()
 	{
-		//PlayerPrefs.DeleteAll();
+		PlayerPrefs.DeleteKey(PREF_BALANCE);
 		if (!PlayerPrefs.HasKey(PREF_NAME))
 			PlayerPrefs.SetString(PREF_NAME, "Name");
 
@@ -46,7 +46,7 @@ public class HelperClass : MonoBehaviour
 			PlayerPrefs.SetString(PREF_FINALSCORE, "0");
 
 		if (!PlayerPrefs.HasKey(PREF_BALANCE))
-			PlayerPrefs.SetString(PREF_BALANCE, "0");
+			PlayerPrefs.SetString(PREF_BALANCE, "50000");
 
 		if (!PlayerPrefs.HasKey(PREF_F_SUN))
 			PlayerPrefs.SetString(PREF_F_SUN, "true");
