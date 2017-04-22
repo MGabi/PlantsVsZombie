@@ -25,7 +25,7 @@ public class DragAndDrop : MonoBehaviour
             GlobalVariables.score -= price;
             screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 
-           
+
         }
         else
         {
@@ -41,7 +41,7 @@ public class DragAndDrop : MonoBehaviour
             Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
 
             Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint);
-            transform.position = curPosition;
+            this.transform.position = curPosition;
         }
     }
 

@@ -32,8 +32,8 @@ public class HelperClass : MonoBehaviour
 			instance = this;
 		else if (instance != this)
 			Destroy(gameObject);
-		DontDestroyOnLoad(gameObject);
-		readData();
+       // DontDestroyOnLoad(gameObject);
+        readData();
 	}
 
 	public void readData()
