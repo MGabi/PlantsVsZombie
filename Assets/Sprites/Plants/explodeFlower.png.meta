@@ -1,12 +1,13 @@
 fileFormatVersion: 2
-guid: 72bb0d3be296b354aa62ab46c888cb3a
-timeCreated: 1492600707
+guid: c1ad5c10a7f826e44a6802fa4660d8b2
+timeCreated: 1492877268
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Sunflower_0
-    21300002: Sunflower_1
-    21300004: Sunflower_2
+    21300000: explodeFlower_0
+    21300002: explodeFlower_1
+    21300004: explodeFlower_2
+    21300006: explodeFlower_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -43,7 +44,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 1030
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -89,42 +90,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sunflower_0
+      name: explodeFlower_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 28
-        height: 26
+        width: 1164
+        height: 1030
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sunflower_1
+      name: explodeFlower_1
       rect:
         serializedVersion: 2
-        x: 28
+        x: 1172
         y: 0
-        width: 30
-        height: 26
+        width: 1208
+        height: 1030
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sunflower_2
+      name: explodeFlower_2
       rect:
         serializedVersion: 2
-        x: 60
+        x: 2456
         y: 0
-        width: 28
-        height: 26
+        width: 1208
+        height: 1030
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explodeFlower_3
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 0
+        width: 1331
+        height: 1030
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 121, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []

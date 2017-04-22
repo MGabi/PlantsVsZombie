@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1852432174345856}
+  m_RootGameObject: {fileID: 1656107930640278}
   m_IsPrefabParent: 1
---- !u!1 &1852432174345856
+--- !u!1 &1656107930640278
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4730567570011738}
-  - component: {fileID: 212412948525426002}
-  - component: {fileID: 114926031945680766}
-  - component: {fileID: 61381149562770788}
-  - component: {fileID: 114924203199961216}
+  - component: {fileID: 4490512875353222}
+  - component: {fileID: 212197765043870460}
+  - component: {fileID: 114821563502671684}
+  - component: {fileID: 61457255213529200}
+  - component: {fileID: 114752303083074266}
   m_Layer: 0
-  m_Name: BomberPlant_Buy
+  m_Name: ExplodePlant_Buy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4730567570011738
+--- !u!4 &4490512875353222
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852432174345856}
+  m_GameObject: {fileID: 1656107930640278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.34955406, y: 5.1424074, z: 0}
+  m_LocalPosition: {x: -1.36, y: 5.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61381149562770788
+--- !u!61 &61457255213529200
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852432174345856}
+  m_GameObject: {fileID: 1656107930640278}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -59,21 +59,21 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.963964, y: 1}
-    newSize: {x: 0.963964, y: 1}
+    oldSize: {x: 1.1300972, y: 1}
+    newSize: {x: 0.90755284, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.90625, y: 0.8125}
+  m_Size: {x: 0.875, y: 0.8125}
   m_EdgeRadius: 0
---- !u!114 &114924203199961216
+--- !u!114 &114752303083074266
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852432174345856}
+  m_GameObject: {fileID: 1656107930640278}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9390847d0fd634f40b186dfda740aefd, type: 3}
@@ -81,25 +81,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 4
   isEnemy: 0
---- !u!114 &114926031945680766
+--- !u!114 &114821563502671684
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852432174345856}
+  m_GameObject: {fileID: 1656107930640278}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd645c71600d1d2469f502994697bf1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1725611722076490, guid: c6228f396879e3a44b45f2268ddc3164, type: 2}
-  price: 100
---- !u!212 &212412948525426002
+  prefab: {fileID: 1428706493567798, guid: 82d36006b01b7d64a938352a51cce42b, type: 2}
+  price: 50
+--- !u!212 &212197765043870460
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852432174345856}
+  m_GameObject: {fileID: 1656107930640278}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -126,11 +126,11 @@ SpriteRenderer:
   m_SortingLayerID: 554355679
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 6a165c9adf1ab1048abebd054e4da1e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c1ad5c10a7f826e44a6802fa4660d8b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.963964, y: 1}
+  m_Size: {x: 0.90755284, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0

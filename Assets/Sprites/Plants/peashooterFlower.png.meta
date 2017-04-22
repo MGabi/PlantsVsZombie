@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 2165ed4dca66c764c9be642002bb92c9
-timeCreated: 1492600680
+guid: 6a165c9adf1ab1048abebd054e4da1e4
+timeCreated: 1492877221
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: BomberPlant_0
-    21300002: BomberPlant_1
-    21300004: BomberPlant_2
-    21300006: BomberPlant_3
+    21300000: peashooterFlower_0
+    21300002: peashooterFlower_1
+    21300004: peashooterFlower_2
+    21300006: peashooterFlower_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -44,7 +44,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 1332
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -90,52 +90,52 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BomberPlant_0
+      name: peashooterFlower_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 29
-        height: 26
+        width: 1309
+        height: 1332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BomberPlant_1
+      name: peashooterFlower_1
       rect:
         serializedVersion: 2
-        x: 30
+        x: 1317
         y: 0
-        width: 29
-        height: 26
+        width: 1284
+        height: 1332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BomberPlant_2
+      name: peashooterFlower_2
       rect:
         serializedVersion: 2
-        x: 59
+        x: 2593
         y: 0
-        width: 30
-        height: 26
+        width: 1364
+        height: 1332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BomberPlant_3
+      name: peashooterFlower_3
       rect:
         serializedVersion: 2
-        x: 89
+        x: 3973
         y: 0
-        width: 30
-        height: 26
+        width: 1309
+        height: 1332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

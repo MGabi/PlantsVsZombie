@@ -10,10 +10,10 @@ public class HelperClass : MonoBehaviour
 
 	public static bool FLOWER_SUN = true;
 	public static bool FLOWER_SHOOTER = true;
-	public static bool FLOWER_BOMB = false;
+	public static bool FLOWER_BOMB = true;
 	public static bool FLOWER_WALL = false;
 	public static bool FLOWER_FREEZE = false;
-	public static bool FLOWER_EXPLODE = false;
+	public static bool FLOWER_EXPLODE = true;
 
 	public static string PREF_NAME = "ID_NAME";
 	public static string PREF_FINALSCORE = "ID_FINALSCORE";
