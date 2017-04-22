@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - nameText
+  - curCamera
   layers:
   - Default
   - TransparentFX

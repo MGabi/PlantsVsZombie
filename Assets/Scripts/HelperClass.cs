@@ -33,6 +33,7 @@ public class HelperClass : MonoBehaviour
 		else if (instance != this)
 			Destroy(gameObject);
 		initData();
+       // DontDestroyOnLoad(gameObject);
 	}
 
 	public void initData()
