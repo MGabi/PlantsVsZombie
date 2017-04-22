@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: 6a165c9adf1ab1048abebd054e4da1e4
-timeCreated: 1492877221
+guid: 90a7a794f2a23e94990bdfe2c5fc8d43
+timeCreated: 1492881655
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: peashooterFlower_0
-    21300002: peashooterFlower_1
-    21300004: peashooterFlower_2
-    21300006: peashooterFlower_3
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -38,13 +34,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1332
+  spritePixelsToUnits: 1345
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -88,59 +84,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: peashooterFlower_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1309
-        height: 1332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: peashooterFlower_1
-      rect:
-        serializedVersion: 2
-        x: 1317
-        y: 0
-        width: 1284
-        height: 1332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: peashooterFlower_2
-      rect:
-        serializedVersion: 2
-        x: 2593
-        y: 0
-        width: 1364
-        height: 1332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: peashooterFlower_3
-      rect:
-        serializedVersion: 2
-        x: 3973
-        y: 0
-        width: 1309
-        height: 1332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: c1ad5c10a7f826e44a6802fa4660d8b2
-timeCreated: 1492877268
+guid: 8d63b74062bc646449159e6024db062e
+timeCreated: 1492881979
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: explodeFlower_0
-    21300002: explodeFlower_1
-    21300004: explodeFlower_2
-    21300006: explodeFlower_3
+    21300000: shooterFlower_0
+    21300002: shooterFlower_1
+    21300004: shooterFlower_2
+    21300006: shooterFlower_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -44,7 +44,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1030
+  spritePixelsToUnits: 1332
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -90,55 +90,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: explodeFlower_0
+      name: shooterFlower_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1164
-        height: 1030
+        width: 1309
+        height: 1332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: explodeFlower_1
+      name: shooterFlower_1
       rect:
         serializedVersion: 2
-        x: 1172
+        x: 1301
         y: 0
-        width: 1208
-        height: 1030
+        width: 1300
+        height: 1332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: explodeFlower_2
+      name: shooterFlower_2
       rect:
         serializedVersion: 2
-        x: 2456
+        x: 2609
         y: 0
-        width: 1208
-        height: 1030
+        width: 1364
+        height: 1332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: explodeFlower_3
+      name: shooterFlower_3
       rect:
         serializedVersion: 2
-        x: 3671
+        x: 3981
         y: 0
-        width: 1331
-        height: 1030
+        width: 1301
+        height: 1332
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 121, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []
