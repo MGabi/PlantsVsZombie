@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShotScript : MonoBehaviour {
 
     public int damage;
+    
   
     private void OnTriggerEnter2D(Collider2D other)
     { 
@@ -13,7 +14,8 @@ public class ShotScript : MonoBehaviour {
         {
             Destroy(this.gameObject);
             other.GetComponent<HealthScript>().DoDamage(damage);
-            GlobalVariables.score += 50;
+            other.GetComponent<SpriteRenderer>().color = new Color32(50, 150, 255, 255);
+                other.GetComponent<BulletMoveScript>().isSlowed = true;
         }
 
         
