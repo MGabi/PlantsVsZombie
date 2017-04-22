@@ -23,7 +23,10 @@ public class BulletMoveScript : MonoBehaviour {
         {
             float x = Random.Range(-0.5f, 0.5f);
             Instantiate(snow, new Vector3(this.transform.position.x,(int)this.transform.position.y + x,this.transform.position.z), Quaternion.identity);
-       
+            if(speed >= 0.002f)
+            {
+                speed -= 0.00005f;
+            }
         }
 
         if (this.transform.position.x >= 20 || this.transform.position.x <= -10)

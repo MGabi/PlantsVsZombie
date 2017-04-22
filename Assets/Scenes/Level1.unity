@@ -327,9 +327,10 @@ MonoBehaviour:
   pref1: {fileID: 1276446842951324, guid: f51749016fdc13e4794c8ec78bf9b7b5, type: 2}
   pref2: {fileID: 1852432174345856, guid: 6e06f016eeeb3994dbef2746b958f266, type: 2}
   pref3: {fileID: 1969588440324526, guid: 57f56ce0ad03e0e43a22ce506345b359, type: 2}
-  pref4: {fileID: 0}
-  pref5: {fileID: 0}
+  pref4: {fileID: 1280396250324902, guid: 693a25187aa01bb45aa679ae78b2ff24, type: 2}
+  pref5: {fileID: 1851407120597542, guid: 404f2d48568662f46b774399f59f7447, type: 2}
   pref6: {fileID: 1656107930640278, guid: c17e29847f1247b4988d1be1196bd06d, type: 2}
+  panel: {fileID: 1092143346206022, guid: da437059e21f44f43be8954b7c77564c, type: 2}
 --- !u!114 &1333068866
 MonoBehaviour:
   m_ObjectHideFlags: 0
