@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5d1705d2c53a06e49bca33954e08fe58
+timeCreated: 1492885916
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SmallTypeWriting-Medium
+  fontNames:
+  - SmallTypeWriting-Medium
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
