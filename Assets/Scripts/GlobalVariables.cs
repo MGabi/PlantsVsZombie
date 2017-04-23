@@ -6,6 +6,7 @@ public class GlobalVariables : MonoBehaviour {
 
     public static int score = 100;
     public static int[][] Matrix;
+    public static float Countdown = 11.0f;
 
 
 

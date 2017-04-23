@@ -14,15 +14,29 @@ public class StartLevel : MonoBehaviour {
 	public GameObject pref1;
     public int[][] levelMatrix;
     int i = 0;
+    float time;
 
     private void Start()
     {
+        time = GlobalVariables.Countdown;
 		string levelID = PlayerPrefs.GetString(LEVEL_TAG);
 		//levelMatrix = LevelsMatrix.levelOne;
 		if (levelID.Equals(LEVEL_1))
 			levelMatrix = LevelsMatrix.levelOne;
-		StartCoroutine(SpawnZombies());
+        StartCoroutine(CountDown());
+     
 	}
+
+    IEnumerator CountDown()
+    {
+        time--;
+        GlobalVariables.Countdown = time;
+        yield return new WaitForSeconds(1);
+        if (time > 0)
+            StartCoroutine(CountDown());
+        if(time == 0)
+            StartCoroutine(SpawnZombies());
+    }
 
 	IEnumerator SpawnZombies()
 	{
@@ -34,7 +48,7 @@ public class StartLevel : MonoBehaviour {
     {
         Instantiate(pref1, new Vector3(9, levelMatrix[i][1], 0), Quaternion.identity);
         i++;
-		if(i < levelMatrix.Length)
+		if(i < levelMatrix.Length-1)
 		StartCoroutine(SpawnZombies());
     }
 	

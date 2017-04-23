@@ -6,12 +6,32 @@ using UnityEngine.UI;
 public class TextUpdateScript : MonoBehaviour
 {
 
-    public Text scoreText;
+    public Text text;
+    public bool isCountDown;
 
     // Update is called once per frame
     void Update()
     {
-        scoreText = GetComponent<Text>();
-        scoreText.text = "Score : " + GlobalVariables.score.ToString();
+        text = GetComponent<Text>();
+        if (isCountDown == false)
+            text.text = "Score : " + GlobalVariables.score.ToString();
+        else
+        {
+            if (GlobalVariables.Countdown != 0)
+                text.text = GlobalVariables.Countdown.ToString() + " secs till zombies spawn";
+
+            else
+            {
+                text.text = "Zombies have been spawned";
+                StartCoroutine(DestroyThis());
+            }    
+        }
+
+    }
+
+    IEnumerator DestroyThis()
+    {
+        yield return new WaitForSeconds(3);
+        Destroy(this.gameObject);
     }
 }
