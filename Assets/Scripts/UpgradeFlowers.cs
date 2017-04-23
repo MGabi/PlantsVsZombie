@@ -106,6 +106,8 @@ public class UpgradeFlowers : MonoBehaviour {
 		PlayerPrefs.SetString(HelperClass.PREF_DMG_SHOOTER, shootD);
 		PlayerPrefs.SetString(HelperClass.PREF_SPEED_SHOOTER, shootS);
 		PlayerPrefs.Save();
+        Debug.Log("in upgradeShooter");
+        Debug.Log(PlayerPrefs.GetString(HelperClass.PREF_SPEED_SHOOTER));
 	}
 
 	private void upgradeBombTo(int level)

@@ -131,8 +131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9390847d0fd634f40b186dfda740aefd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageSparkle: {fileID: 1468232208503054, guid: 0be34beb08015cd48ae0bde2c15d66cb,
+    type: 2}
   health: 1
   isEnemy: 0
+  plant: MineFlower
 --- !u!212 &212196434575798796
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -163,7 +166,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 554355679
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aa0dcbd873985c240af095f1f738e1f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

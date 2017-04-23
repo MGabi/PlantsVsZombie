@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61262934035309350}
   - component: {fileID: 50532134779526098}
   - component: {fileID: 114911711874061094}
+  - component: {fileID: 114352704605649980}
   m_Layer: 0
   m_Name: ExplodePlant
   m_TagString: Untagged
@@ -106,6 +107,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114352704605649980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1428706493567798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20dcf7e5dac20a4d8e5e8779a39e358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pref1: {fileID: 1192249446313692, guid: e427d7e74d9a2c943b78a875bff08b9c, type: 2}
+  pref2: {fileID: 1479853248856556, guid: 82e26cc1455a99340b9ef906e17b6a05, type: 2}
 --- !u!114 &114911711874061094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,8 +131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9390847d0fd634f40b186dfda740aefd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageSparkle: {fileID: 1468232208503054, guid: 0be34beb08015cd48ae0bde2c15d66cb,
+    type: 2}
   health: 4
   isEnemy: 0
+  plant: ExplodeFlower
 --- !u!212 &212667071219729600
 SpriteRenderer:
   m_ObjectHideFlags: 1

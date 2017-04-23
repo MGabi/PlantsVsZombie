@@ -36,7 +36,7 @@ public class HelperClass : MonoBehaviour
 	public static string PREF_LVL_EXPLODE = "ID_LVL_EXPLODE";
 
 	public static string PREF_HEALTH_SUN = "ID_HEALTH_SUN";
-	public static string PREF_HEALTH_SHOOTER = "ID_HEALTH_SUN";
+	public static string PREF_HEALTH_SHOOTER = "ID_HEALTH_SHOOTER";
 	public static string PREF_HEALTH_WALL = "ID_HEALTH_WALL";
 	public static string PREF_HEALTH_FREEZE = "ID_HEALTH_FREEZE";
 

@@ -14,8 +14,9 @@ public class ZombieAtackScript : MonoBehaviour {
                 collision.collider.GetComponent<HealthScript>().DoDamage(dmg);
                 if(collision.collider.GetComponent<MineExplosionScript>() != null)
                 {
-                    this.GetComponent<HealthScript>().DoDamage(collision.collider.GetComponent<MineExplosionScript>().damage);
+                    StartCoroutine(Burn(collision));
                 }
+           
                 else if(collision.collider.GetComponent<HealthScript>().health > 0 )
                 {
                     this.transform.position = new Vector3(this.transform.position.x + 0.01f, this.transform.position.y, this.transform.position.z);
@@ -30,6 +31,12 @@ public class ZombieAtackScript : MonoBehaviour {
                 
             }
   
+    }
+
+    IEnumerator Burn(Collision2D collision)
+    {
+        yield return new WaitForSeconds(1);
+        this.GetComponent<HealthScript>().DoDamage(collision.collider.GetComponent<MineExplosionScript>().damage);
     }
 
     IEnumerator Wait()
