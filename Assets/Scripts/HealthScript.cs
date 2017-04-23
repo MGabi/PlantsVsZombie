@@ -13,6 +13,10 @@ public class HealthScript : MonoBehaviour {
 
     private void Start()
     {
+        if(isEnemy == true)
+        {
+            this.GetComponent<Animator>().enabled = false;
+        }
         GetFlowerType();
         if (this.GetComponent<Animator>() != null)
             this.GetComponent<Animator>().speed = 0.5f;
@@ -53,16 +57,24 @@ public class HealthScript : MonoBehaviour {
         {
             if(this.GetComponent<MineExplosionScript>() != null)
             {
+                this.GetComponent<Animator>().enabled = true;
                 this.GetComponent<MineExplosionScript>().Explode();
             }
             else
             {
-                Destroy(this.gameObject);
+                StartCoroutine(DestroyZombie());
             }
             if(isEnemy == true)
                 GlobalVariables.score += 50;
         }
         else
             Instantiate(damageSparkle, this.transform.position, Quaternion.identity);
+    }
+
+    IEnumerator DestroyZombie()
+    {
+        this.GetComponent<Animator>().enabled = true;
+        yield return new WaitForSeconds(1);
+        Destroy(this.gameObject);
     }
 }
