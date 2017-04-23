@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthScript : MonoBehaviour {
 
-    public int health;
+    public float health;
     public bool isEnemy;
    
 
@@ -19,7 +19,14 @@ public class HealthScript : MonoBehaviour {
         health -= dmg;
         if (health <= 0)
         {
-            Destroy(this.gameObject);
+            if(this.GetComponent<MineExplosionScript>() != null)
+            {
+                this.GetComponent<MineExplosionScript>().Explode();
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
             if(isEnemy == true)
                 GlobalVariables.score += 50;
         }

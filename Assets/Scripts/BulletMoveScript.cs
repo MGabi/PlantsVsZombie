@@ -19,7 +19,7 @@ public class BulletMoveScript : MonoBehaviour {
     public void Update () {
 
         this.transform.position = new Vector3(this.transform.position.x + direction * speed, this.transform.position.y, this.transform.position.z);
-        if(isSlowed)
+        if(isSlowed == true)
         {
             float x = Random.Range(-0.5f, 0.5f);
             Instantiate(snow, new Vector3(this.transform.position.x,(int)this.transform.position.y + x,this.transform.position.z), Quaternion.identity);

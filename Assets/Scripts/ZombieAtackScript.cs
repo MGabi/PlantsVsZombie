@@ -12,7 +12,11 @@ public class ZombieAtackScript : MonoBehaviour {
             if (collision.collider.GetComponent<HealthScript>().isEnemy == false)
             {
                 collision.collider.GetComponent<HealthScript>().DoDamage(dmg);
-                if(collision.collider.GetComponent<HealthScript>().health > 0 )
+                if(collision.collider.GetComponent<MineExplosionScript>() != null)
+                {
+                    this.GetComponent<HealthScript>().DoDamage(collision.collider.GetComponent<MineExplosionScript>().damage);
+                }
+                else if(collision.collider.GetComponent<HealthScript>().health > 0 )
                 {
                     this.transform.position = new Vector3(this.transform.position.x + 0.01f, this.transform.position.y, this.transform.position.z);
                     this.GetComponent<BulletMoveScript>().speed = 0;

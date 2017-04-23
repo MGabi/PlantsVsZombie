@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61377078555020710}
   - component: {fileID: 50817121267598524}
   - component: {fileID: 114350494945169372}
+  - component: {fileID: 114184418099172498}
   m_Layer: 0
   m_Name: MinePlant
   m_TagString: Untagged
@@ -87,7 +88,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.875, y: 0.8125}
+  m_Size: {x: 0.1, y: 0.9}
   m_EdgeRadius: 0
 --- !u!95 &95311627471141766
 Animator:
@@ -106,6 +107,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114184418099172498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1384471027033074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e87119a3c940c4ca756c73c6505ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 1174139359283676, guid: 8fd00d8c0e612dd4aa459bf004667506, type: 2}
+  damage: 5
 --- !u!114 &114350494945169372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9390847d0fd634f40b186dfda740aefd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 4
+  health: 1
   isEnemy: 0
 --- !u!212 &212196434575798796
 SpriteRenderer:
@@ -149,7 +163,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 554355679
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aa0dcbd873985c240af095f1f738e1f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
