@@ -10,16 +10,17 @@ public class HelperClass : MonoBehaviour
 
 	public static bool FLOWER_SUN = true;
 	public static bool FLOWER_SHOOTER = true;
-	public static bool FLOWER_BOMB = true;
+	public static bool FLOWER_BOMB = false;
 	public static bool FLOWER_WALL = false;
 	public static bool FLOWER_FREEZE = false;
-	public static bool FLOWER_EXPLODE = true;
+	public static bool FLOWER_EXPLODE = false;
 
 	// Plants properties
 
 	public static string PREF_NAME = "ID_NAME";
 	public static string PREF_FINALSCORE = "ID_FINALSCORE";
 	public static string PREF_BALANCE = "ID_BALANCE";
+
 	public static string PREF_F_SUN = "ID_F_SUN";
 	public static string PREF_F_SHOOTER = "ID_F_SHOOTER";
 	public static string PREF_F_BOMB = "ID_F_BOMB";
@@ -32,7 +33,7 @@ public class HelperClass : MonoBehaviour
 	public static string PREF_LVL_BOMB = "ID_LVL_BOMB";
 	public static string PREF_LVL_WALL = "ID_LVL_WALL";
 	public static string PREF_LVL_FREEZE = "ID_LVL_FREEZE";
-	public static string PREF_LVL_EXPLODE = "ID_LVL_FREEZE";
+	public static string PREF_LVL_EXPLODE = "ID_LVL_EXPLODE";
 
 	public static string PREF_HEALTH_SUN = "ID_HEALTH_SUN";
 	public static string PREF_HEALTH_SHOOTER = "ID_HEALTH_SUN";
@@ -42,7 +43,6 @@ public class HelperClass : MonoBehaviour
 	public static string PREF_DMG_SHOOTER = "ID_DMG_SHOOTER";
 	public static string PREF_DMG_BOMB = "ID_DMG_BOMB";
 	public static string PREF_DMG_FREEZE = "ID_DMG_FREEZE";
-	public static string PREF_DMG_EXPLODE = "ID_DMG_EXPLODE";
 
 	public static string PREF_SPEED_SHOOTER = "ID_SPEED_SHOOTER";
 	public static string PREF_SPEED_FREEZE = "ID_SPEED_FREEZE";
@@ -50,6 +50,8 @@ public class HelperClass : MonoBehaviour
 	public static string PREF_SUN_COOLDOWN = "ID_SUN_COOLDOWN";
 	public static string PREF_FREEZE_SLOWMO = "ID_SUN_SLOWMO";
 
+	public static string PREF_EXPLODE_TYPE = "ID_EXPLODE_TYPE";
+	public static string PREF_EXPLODE_RADIUS = "ID_EXPLODE_RADIUS";
 
 
 	void Awake()
@@ -66,6 +68,7 @@ public class HelperClass : MonoBehaviour
 	public void initData()
 	{
 		//PlayerPrefs.DeleteKey(PREF_BALANCE);
+		//PlayerPrefs.DeleteAll();
 		if (!PlayerPrefs.HasKey(PREF_NAME))
 			PlayerPrefs.SetString(PREF_NAME, "Name");
 
@@ -77,22 +80,22 @@ public class HelperClass : MonoBehaviour
 
 		//Available plants
 		if (!PlayerPrefs.HasKey(PREF_F_SUN))
-			PlayerPrefs.SetString(PREF_F_SUN, "true");
+			PlayerPrefs.SetString(PREF_F_SUN, FLOWER_SUN.ToString());
 
 		if (!PlayerPrefs.HasKey(PREF_F_SHOOTER))
-			PlayerPrefs.SetString(PREF_F_SHOOTER, "true");
+			PlayerPrefs.SetString(PREF_F_SHOOTER, FLOWER_SHOOTER.ToString());
 
 		if (!PlayerPrefs.HasKey(PREF_F_BOMB))
-			PlayerPrefs.SetString(PREF_F_BOMB, "false");
+			PlayerPrefs.SetString(PREF_F_BOMB, FLOWER_BOMB.ToString());
 
 		if (!PlayerPrefs.HasKey(PREF_F_WALL))
-			PlayerPrefs.SetString(PREF_F_WALL, "false");
+			PlayerPrefs.SetString(PREF_F_WALL, FLOWER_WALL.ToString());
 
 		if (!PlayerPrefs.HasKey(PREF_F_FREEZE))
-			PlayerPrefs.SetString(PREF_F_FREEZE, "false");
+			PlayerPrefs.SetString(PREF_F_FREEZE, FLOWER_FREEZE.ToString());
 
 		if (!PlayerPrefs.HasKey(PREF_F_EXPLODE))
-			PlayerPrefs.SetString(PREF_F_EXPLODE, "false");
+			PlayerPrefs.SetString(PREF_F_EXPLODE, FLOWER_EXPLODE.ToString());
 
 		//Level
 		if (!PlayerPrefs.HasKey(PREF_LVL_SUN))
@@ -121,7 +124,7 @@ public class HelperClass : MonoBehaviour
 			PlayerPrefs.SetString(PREF_HEALTH_SHOOTER, PlantAttrs.SHOOTER_1_HEALTH);
 
 		if (!PlayerPrefs.HasKey(PREF_HEALTH_WALL))
-			PlayerPrefs.SetString(PREF_HEALTH_WALL, PlantAttrs.WALLNUT_1_HEALTH);
+			PlayerPrefs.SetString(PREF_HEALTH_WALL, PlantAttrs.WALL_1_HEALTH);
 
 		if (!PlayerPrefs.HasKey(PREF_HEALTH_FREEZE))
 			PlayerPrefs.SetString(PREF_HEALTH_FREEZE, PlantAttrs.FREEZE_1_HEALTH);
@@ -149,6 +152,12 @@ public class HelperClass : MonoBehaviour
 
 		if (!PlayerPrefs.HasKey(PREF_FREEZE_SLOWMO))
 			PlayerPrefs.SetString(PREF_FREEZE_SLOWMO, PlantAttrs.FREEZE_1_SLOWMO);
+
+		if (!PlayerPrefs.HasKey(PREF_EXPLODE_TYPE))
+			PlayerPrefs.SetString(PREF_EXPLODE_TYPE, PlantAttrs.EXPLODE_1_TYPE);
+
+		if (!PlayerPrefs.HasKey(PREF_EXPLODE_RADIUS))
+			PlayerPrefs.SetString(PREF_EXPLODE_RADIUS, PlantAttrs.EXPLODE_1_RADIUS);
 
 		PlayerPrefs.Save();
 	}
