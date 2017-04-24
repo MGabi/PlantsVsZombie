@@ -13,7 +13,7 @@ public class GeneratePlants_Buy : MonoBehaviour {
     public GameObject pref6;
     public GameObject panel;
 
-    private int i = 5, j = -1;
+    private int i = 5, j = 0;
     void Start () {
 
         

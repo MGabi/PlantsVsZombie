@@ -46,7 +46,7 @@ public class StartLevel : MonoBehaviour {
 
 	void Spawn()
     {
-        Instantiate(pref1, new Vector3(9, levelMatrix[i][1], 0), Quaternion.identity);
+        Instantiate(pref1, new Vector3(12, levelMatrix[i][1], 0), Quaternion.identity);
         i++;
 		if(i < levelMatrix.Length-1)
 		StartCoroutine(SpawnZombies());
