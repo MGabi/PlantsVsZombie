@@ -332,6 +332,7 @@ MonoBehaviour:
   pref5: {fileID: 1851407120597542, guid: 404f2d48568662f46b774399f59f7447, type: 2}
   pref6: {fileID: 1656107930640278, guid: c17e29847f1247b4988d1be1196bd06d, type: 2}
   panel: {fileID: 1092143346206022, guid: da437059e21f44f43be8954b7c77564c, type: 2}
+  shovel: {fileID: 1388402225486654, guid: 1e579a645257e1546b8b82c9e3b55530, type: 2}
 --- !u!114 &1333068866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,8 +377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.074374, y: -0.42516}
-  m_SizeDelta: {x: 1121.8, y: 630.85}
+  m_AnchoredPosition: {x: -0.0000028043, y: 0.2425}
+  m_SizeDelta: {x: 1122, y: 630.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1470447458
 MonoBehaviour:

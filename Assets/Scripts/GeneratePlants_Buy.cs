@@ -12,6 +12,7 @@ public class GeneratePlants_Buy : MonoBehaviour {
     public GameObject pref5;
     public GameObject pref6;
     public GameObject panel;
+    public GameObject shovel;
 
     private int i = 5, j = 0;
     void Start () {
@@ -53,6 +54,9 @@ public class GeneratePlants_Buy : MonoBehaviour {
             Instantiate(pref6, new Vector3(j, i, 0), Quaternion.identity);
             j++;
         }
+
+        Instantiate(panel, new Vector3(j, i, 0), Quaternion.identity);
+        Instantiate(shovel, new Vector3(j, i, 0), Quaternion.identity);
     }
 	
 }

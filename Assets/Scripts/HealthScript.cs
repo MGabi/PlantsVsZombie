@@ -65,7 +65,10 @@ public class HealthScript : MonoBehaviour {
                 StartCoroutine(DestroyZombie());
             }
             if(isEnemy == true)
+            {
                 GlobalVariables.score += 50;
+                GlobalVariables.ZombieOnLane[(int)this.transform.position.y]--;
+            }
         }
         else
             Instantiate(damageSparkle, this.transform.position, Quaternion.identity);
