@@ -79,6 +79,10 @@ public class ShovelScript : MonoBehaviour {
                     Destroy(this.gameObject);
                     remove = false;
                 }
+                else
+                {
+                    Destroy(this.gameObject);
+                }
             }
         }
         else
@@ -88,12 +92,13 @@ public class ShovelScript : MonoBehaviour {
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         remove = true;
         plantToRemove = collision.gameObject;
+
     }
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         remove = false;
     }
