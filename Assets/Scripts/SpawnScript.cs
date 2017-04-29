@@ -48,7 +48,7 @@ public class SpawnScript : MonoBehaviour
                 Spawn();
             else
             {
-                if (GlobalVariables.ZombieOnLane[(int)this.transform.position.y] != 0)
+                if (GlobalVariables.ZombieOnLane[(int)this.transform.position.y] > 0)
                     Spawn();
             }
             interval2 = interval;

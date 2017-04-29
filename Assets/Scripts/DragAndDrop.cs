@@ -8,9 +8,10 @@ using UnityEngine.UI;
 public class DragAndDrop : MonoBehaviour
 {
     public GameObject prefab;
+    public GameObject selectionBox;
     public int price;
     private Vector3 screenPoint;
-
+    private GameObject otherGO;
 
     bool bought = true;
 
@@ -22,10 +23,11 @@ public class DragAndDrop : MonoBehaviour
             bought = true;
             
             Instantiate(this.gameObject, this.transform.position, Quaternion.identity);
+            otherGO = Instantiate(selectionBox, this.transform.position, Quaternion.identity) as GameObject;
             GlobalVariables.score -= price;
             screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 
-
+            
         }
         else
         {
@@ -39,9 +41,12 @@ public class DragAndDrop : MonoBehaviour
         if (bought == true)
         {
             Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
-
+            
             Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint);
             this.transform.position = curPosition;
+            otherGO.transform.position = new Vector3((int)Camera.main.ScreenToWorldPoint(Input.mousePosition).x, (int)Camera.main.ScreenToWorldPoint(Input.mousePosition).y, this.transform.position.z);
+
+
         }
     }
 
@@ -60,11 +65,12 @@ public class DragAndDrop : MonoBehaviour
                 this.transform.position = new Vector3((int)(Camera.main.ScreenToWorldPoint(Input.mousePosition).x),(int)(Camera.main.ScreenToWorldPoint(Input.mousePosition).y), transform.position.z);
                 Instantiate(prefab, this.transform.position, Quaternion.identity);
                 Destroy(this.gameObject);
-
+                Destroy(otherGO);
             }
             else
             {
                 Destroy(this.gameObject);
+                Destroy(otherGO);
                 GlobalVariables.score += price;
             }
         }
