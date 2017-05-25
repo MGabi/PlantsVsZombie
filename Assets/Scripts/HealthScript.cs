@@ -10,18 +10,37 @@ public class HealthScript : MonoBehaviour {
     public float health;
     public bool isEnemy;
     public string plant;
-
+    public RuntimeAnimatorController animation;
+    private RuntimeAnimatorController anim2;
     private void Start()
     {
         if(isEnemy == true)
         {
             this.GetComponent<Animator>().enabled = false;
         }
+        else
+        {
+            if(animation!=null)
+            {
+                anim2 = this.GetComponent<Animator>().runtimeAnimatorController;
+                this.GetComponent<Animator>().runtimeAnimatorController = animation;
+                StartCoroutine(ChangeAnim());
+               
+            }
+        }
+       
         GetFlowerType();
         if (this.GetComponent<Animator>() != null)
             this.GetComponent<Animator>().speed = 0.5f;
     }
 
+    IEnumerator ChangeAnim()
+    {
+      
+        yield return new WaitForSeconds(1);
+        this.GetComponent<Animator>().runtimeAnimatorController = anim2;
+
+    }
 
     private void GetFlowerType()
     {
@@ -65,7 +84,8 @@ public class HealthScript : MonoBehaviour {
                 if (isEnemy == true)
                 {
                     GlobalVariables.score += 50;
-                    GlobalVariables.ZombieOnLane[(int)this.transform.position.y]--;
+                    GlobalVariables.ZombieOnLane[(int)(this.transform.position.y+0.2)]--;
+                   
                 }
                 StartCoroutine(DestroyZombie());
             }

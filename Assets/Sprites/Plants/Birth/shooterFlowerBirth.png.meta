@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 76a2102277b85ca4ba416379f375c0c0
-timeCreated: 1492607190
+guid: d3a8c237269fa42478c2043f541efdb2
+timeCreated: 1495548505
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: shooterFlowerBirth_0
+    21300002: shooterFlowerBirth_1
+    21300004: shooterFlowerBirth_2
+    21300006: shooterFlowerBirth_3
+    21300008: shooterFlowerBirth_4
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,13 +39,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 6
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 917
+  spritePixelsToUnits: 1336
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -84,7 +89,72 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: shooterFlowerBirth_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 735
+        height: 1332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shooterFlowerBirth_1
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 0
+        width: 710
+        height: 1332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shooterFlowerBirth_2
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 0
+        width: 1076
+        height: 1332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shooterFlowerBirth_3
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 0
+        width: 1212
+        height: 1332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shooterFlowerBirth_4
+      rect:
+        serializedVersion: 2
+        x: 3877
+        y: 0
+        width: 1405
+        height: 1332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

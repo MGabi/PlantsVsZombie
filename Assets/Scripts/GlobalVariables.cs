@@ -8,7 +8,8 @@ public class GlobalVariables : MonoBehaviour {
     public static int[][] Matrix;
     public static float Countdown = 11.0f;
     public static int[] ZombieOnLane;
-
+    public static bool spawningFinished = false;
+    public static int totalZombies = 0;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void OnBeforeSceneLoadRuntimeMethod()

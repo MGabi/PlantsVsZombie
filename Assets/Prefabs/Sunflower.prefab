@@ -137,6 +137,7 @@ MonoBehaviour:
   health: 4
   isEnemy: 0
   plant: Sunflower
+  animation: {fileID: 9100000, guid: 7b6dcc8282f1899458a8bb8ac8eadd02, type: 2}
 --- !u!212 &212364357072916332
 SpriteRenderer:
   m_ObjectHideFlags: 1

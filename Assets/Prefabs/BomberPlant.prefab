@@ -137,6 +137,7 @@ MonoBehaviour:
   health: 4
   isEnemy: 0
   plant: ShooterFlower
+  animation: {fileID: 9100000, guid: b1984ab7ce4465b44a761d31e50d4f28, type: 2}
 --- !u!212 &212173657431090746
 SpriteRenderer:
   m_ObjectHideFlags: 1

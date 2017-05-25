@@ -49,8 +49,13 @@ public class StartLevel : MonoBehaviour {
         Instantiate(pref1, new Vector3(12, levelMatrix[i][1], 0), Quaternion.identity);
         GlobalVariables.ZombieOnLane[levelMatrix[i][1]]++;
         i++;
-		if(i < levelMatrix.Length-1)
-		StartCoroutine(SpawnZombies());
+
+        if (i < levelMatrix.Length -1)
+        {
+            StartCoroutine(SpawnZombies());
+        }
+        else
+            GlobalVariables.spawningFinished = true;
     }
 	
 	

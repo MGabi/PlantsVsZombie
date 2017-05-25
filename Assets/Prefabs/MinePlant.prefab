@@ -136,6 +136,7 @@ MonoBehaviour:
   health: 1
   isEnemy: 0
   plant: MineFlower
+  animation: {fileID: 9100000, guid: a8239145f08ca724691c29268dd5f6ee, type: 2}
 --- !u!212 &212196434575798796
 SpriteRenderer:
   m_ObjectHideFlags: 1

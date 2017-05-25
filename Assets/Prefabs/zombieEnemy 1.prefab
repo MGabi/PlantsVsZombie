@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114246302269737642}
   - component: {fileID: 114896461440426390}
   - component: {fileID: 95150088853329292}
+  - component: {fileID: 114641787326281856}
   m_Layer: 0
   m_Name: zombieEnemy 1
   m_TagString: Untagged
@@ -81,7 +82,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -124,6 +125,7 @@ MonoBehaviour:
   health: 4
   isEnemy: 1
   plant: 
+  animation: {fileID: 0}
 --- !u!114 &114451680452781344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,6 +142,17 @@ MonoBehaviour:
   speed2: 0.007
   isSlowed: 0
   snow: {fileID: 1203299843750072, guid: 6e5207cd982688b47aa4849a0cc5b02f, type: 2}
+--- !u!114 &114641787326281856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1058214643195356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a03a1317ae1dd04dab77646e9901ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114896461440426390
 MonoBehaviour:
   m_ObjectHideFlags: 1

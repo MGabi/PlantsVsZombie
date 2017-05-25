@@ -122,6 +122,7 @@ MonoBehaviour:
   health: 5
   isEnemy: 0
   plant: WallnutFlower
+  animation: {fileID: 9100000, guid: 97270a090173e684eaecceb2092a7c9a, type: 2}
 --- !u!212 &212393637118766606
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -137,6 +137,7 @@ MonoBehaviour:
   health: 4
   isEnemy: 0
   plant: FreezeFlower
+  animation: {fileID: 9100000, guid: bfb6cd534ab232c49835401851718dd1, type: 2}
 --- !u!212 &212643365607764634
 SpriteRenderer:
   m_ObjectHideFlags: 1

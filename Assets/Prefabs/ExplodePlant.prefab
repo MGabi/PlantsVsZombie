@@ -136,6 +136,7 @@ MonoBehaviour:
   health: 4
   isEnemy: 0
   plant: ExplodeFlower
+  animation: {fileID: 9100000, guid: a30ecad7b44f11c4d9bdd562d85526c9, type: 2}
 --- !u!212 &212667071219729600
 SpriteRenderer:
   m_ObjectHideFlags: 1
