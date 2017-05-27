@@ -15,9 +15,11 @@ public class GameWin : MonoBehaviour {
 
             if (k == true)
             {
-               //GAME WON
-               //wait few seconds before display WIN SCENE
-            }
+				//UnityEngine.SceneManagement.SceneManager.LoadScene("GameWinScene");
+				Debug.Log("GAME WON!!!");
+				Debug.Log("GAME WON!!!");
+				Debug.Log("GAME WON!!!");
+			}
             
         }
     }

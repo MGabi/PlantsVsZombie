@@ -23,7 +23,15 @@ public class StartLevel : MonoBehaviour {
 		//levelMatrix = LevelsMatrix.levelOne;
 		if (levelID.Equals(LEVEL_1))
 			levelMatrix = LevelsMatrix.levelOne;
-        StartCoroutine(CountDown());
+		if (levelID.Equals(LEVEL_2))
+			levelMatrix = LevelsMatrix.levelTwo;
+		if (levelID.Equals(LEVEL_3))
+			levelMatrix = LevelsMatrix.levelThree;
+		if (levelID.Equals(LEVEL_4))
+			levelMatrix = LevelsMatrix.levelFour;
+		if (levelID.Equals(LEVEL_5))
+			levelMatrix = LevelsMatrix.levelFive;
+		StartCoroutine(CountDown());
      
 	}
 

@@ -9,8 +9,8 @@ public class GameOver : MonoBehaviour {
 	void Update () {
 		if(this.transform.position.x < -2)
         {
-            //GAME OVER SCENE
-           
-        }
+			//UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
+			Application.LoadLevel("GameOverScene");
+		}
 	}
 }

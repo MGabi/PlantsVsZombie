@@ -15,6 +15,8 @@ public class HelperClass : MonoBehaviour
 	public static bool FLOWER_FREEZE = false;
 	public static bool FLOWER_EXPLODE = false;
 
+	public static string LEVEL_CURRENT = "ID_LEVEL_CURRENT";
+
 	// Plants properties
 
 	public static string PREF_NAME = "ID_NAME";
@@ -69,6 +71,9 @@ public class HelperClass : MonoBehaviour
 	{
 		//PlayerPrefs.DeleteKey(PREF_BALANCE);
 		//PlayerPrefs.DeleteAll();
+		if (!PlayerPrefs.HasKey(LEVEL_CURRENT))
+			PlayerPrefs.SetInt(LEVEL_CURRENT, 1);
+
 		if (!PlayerPrefs.HasKey(PREF_NAME))
 			PlayerPrefs.SetString(PREF_NAME, "Name");
 

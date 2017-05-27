@@ -20,3 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayerStatus.unity
     guid: 17acaeec1f024e64c823157770c10a59
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: c78abdaa1f9de81458af95e0ebad0a1d
+  - enabled: 1
+    path: Assets/Scenes/GameWinScene.unity
+    guid: 00000000000000000000000000000000
