@@ -14,7 +14,7 @@ public class TextUpdateScript : MonoBehaviour
     {
         text = GetComponent<Text>();
         if (isCountDown == false)
-            text.text = "Score : " + GlobalVariables.score.ToString();
+            text.text = "SUNS : " + GlobalVariables.score.ToString();
         else
         {
             if (GlobalVariables.Countdown != 0)

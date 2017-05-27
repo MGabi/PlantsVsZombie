@@ -19,6 +19,9 @@ public class GameWin : MonoBehaviour {
 				Debug.Log("GAME WON!!!");
 				Debug.Log("GAME WON!!!");
 				Debug.Log("GAME WON!!!");
+				int suns = GlobalVariables.score;
+				int bal = System.Int32.Parse(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
+				PlayerPrefs.SetString(HelperClass.PREF_BALANCE, (bal + suns*10).ToString());
 			}
         }
     }
