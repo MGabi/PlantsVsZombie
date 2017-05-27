@@ -42,7 +42,7 @@ public class ShovelScript : MonoBehaviour {
                 if (plantToRemove.GetComponent<HealthScript>().plant.Equals("ShooterFlower"))
                 {
                     GlobalVariables.Matrix[(int)plantToRemove.transform.position.y][(int)plantToRemove.transform.position.x] = 0;
-                    GlobalVariables.score += 100;
+                    GlobalVariables.score += 80;
                     Destroy(plantToRemove);
                     Destroy(this.gameObject);
                     remove = false;
@@ -50,7 +50,7 @@ public class ShovelScript : MonoBehaviour {
                 if (plantToRemove.GetComponent<HealthScript>().plant.Equals("ExplodeFlower"))
                 {
                     GlobalVariables.Matrix[(int)plantToRemove.transform.position.y][(int)plantToRemove.transform.position.x] = 0;
-                    GlobalVariables.score += 100;
+                    GlobalVariables.score += 125;
                     Destroy(plantToRemove);
                     Destroy(this.gameObject);
                     remove = false;
@@ -58,7 +58,7 @@ public class ShovelScript : MonoBehaviour {
                 if (plantToRemove.GetComponent<HealthScript>().plant.Equals("FreezeFlower"))
                 {
                     GlobalVariables.Matrix[(int)plantToRemove.transform.position.y][(int)plantToRemove.transform.position.x] = 0;
-                    GlobalVariables.score += 100;
+                    GlobalVariables.score += 75;
                     Destroy(plantToRemove);
                     Destroy(this.gameObject);
                     remove = false;
@@ -74,7 +74,23 @@ public class ShovelScript : MonoBehaviour {
                 if (plantToRemove.GetComponent<HealthScript>().plant.Equals("WallnutFlower"))
                 {
                     GlobalVariables.Matrix[(int)plantToRemove.transform.position.y][(int)plantToRemove.transform.position.x] = 0;
-                    GlobalVariables.score += 100;
+                    GlobalVariables.score += 50;
+                    Destroy(plantToRemove);
+                    Destroy(this.gameObject);
+                    remove = false;
+                }
+                if (plantToRemove.GetComponent<HealthScript>().plant.Equals("Cabbage"))
+                {
+                    GlobalVariables.Matrix[(int)plantToRemove.transform.position.y][(int)plantToRemove.transform.position.x] = 0;
+                    GlobalVariables.score += 500;
+                    Destroy(plantToRemove);
+                    Destroy(this.gameObject);
+                    remove = false;
+                }
+                if (plantToRemove.GetComponent<HealthScript>().plant.Equals("Blueberry"))
+                {
+                    GlobalVariables.Matrix[(int)plantToRemove.transform.position.y][(int)plantToRemove.transform.position.x] = 0;
+                    GlobalVariables.score += 175;
                     Destroy(plantToRemove);
                     Destroy(this.gameObject);
                     remove = false;

@@ -4,22 +4,21 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour {
 
-    public static int score = 500;
+    public static int score = 50;
     public static int[][] Matrix;
-    public static float Countdown = 11.0f;
+    public static float Countdown = 61.0f;
     public static int[] ZombieOnLane;
     public static bool spawningFinished = false;
     public static int totalZombies = 0;
 
     public static bool ExistsZombie(string plant,Transform plantTransf)
     {
-        if (plant == "ShooterFlower")
-        {
+        
             if (ZombieOnLane[(int)plantTransf.position.y] > 0)
                 return true;
             else return false;
-        }
-        else return false;
+       
+        
 
     }
 

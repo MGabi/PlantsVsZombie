@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZombieAtackScript : MonoBehaviour {
 
-    public int dmg;
+    public float dmg;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

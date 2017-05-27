@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 33
   doSlow: 0
-  destroyable: 0
+  destroyable: 1
   plant: ExplodePlant
 --- !u!114 &114409979787132912
 MonoBehaviour:

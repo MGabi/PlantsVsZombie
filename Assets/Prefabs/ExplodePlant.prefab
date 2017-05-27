@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20dcf7e5dac20a4d8e5e8779a39e358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 3
+  interval: 6
   launch1: {fileID: 1192249446313692, guid: e427d7e74d9a2c943b78a875bff08b9c, type: 2}
   fireBeam1: {fileID: 1479853248856556, guid: 82e26cc1455a99340b9ef906e17b6a05, type: 2}
   launch2: {fileID: 1911134687298172, guid: a1d886bcf3357044f82d84f3c37b783d, type: 2}
@@ -140,7 +140,7 @@ MonoBehaviour:
   health: 350
   isEnemy: 0
   plant: ExplodeFlower
-  animation: {fileID: 9100000, guid: a30ecad7b44f11c4d9bdd562d85526c9, type: 2}
+  animation: {fileID: 0}
 --- !u!212 &212667071219729600
 SpriteRenderer:
   m_ObjectHideFlags: 1

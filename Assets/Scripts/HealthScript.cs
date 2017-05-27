@@ -7,6 +7,7 @@ using UnityEngine;
 public class HealthScript : MonoBehaviour {
 
     public GameObject damageSparkle;
+    public RuntimeAnimatorController dieAnimation;
     public float health;
     public bool isEnemy;
     public string plant;
@@ -16,7 +17,7 @@ public class HealthScript : MonoBehaviour {
     {
         if(isEnemy == true)
         {
-            this.GetComponent<Animator>().enabled = false;
+            this.GetComponent<Animator>().enabled = true;
         }
         else
         {
@@ -24,7 +25,7 @@ public class HealthScript : MonoBehaviour {
             {
                 anim2 = this.GetComponent<Animator>().runtimeAnimatorController;
                 this.GetComponent<Animator>().runtimeAnimatorController = animation;
-                StartCoroutine(ChangeAnim());
+                StartCoroutine(ChangeAnim(anim2));
                
             }
         }
@@ -34,11 +35,11 @@ public class HealthScript : MonoBehaviour {
             this.GetComponent<Animator>().speed = 0.5f;
     }
 
-    IEnumerator ChangeAnim()
+    IEnumerator ChangeAnim(RuntimeAnimatorController anim)
     {
-      
-        yield return new WaitForSeconds(1);
-        this.GetComponent<Animator>().runtimeAnimatorController = anim2;
+        this.GetComponent<Animator>().runtimeAnimatorController = anim;
+        yield return new WaitForSeconds(2);
+        
 
     }
 
@@ -84,6 +85,7 @@ public class HealthScript : MonoBehaviour {
                 if (isEnemy == true)
                 {
                     GlobalVariables.score += 50;
+                   
                     GlobalVariables.ZombieOnLane[(int)(this.transform.position.y+0.2)]--;
                    
                 }

@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1017367373375238, guid: 344ad0df2c744904bae005d795df582b, type: 2}
-  interval: 5
+  interval: 15
   plant: Sunflower
 --- !u!114 &114494266195921728
 MonoBehaviour:
@@ -134,7 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageSparkle: {fileID: 1468232208503054, guid: 0be34beb08015cd48ae0bde2c15d66cb,
     type: 2}
-  health: 4
+  dieAnimation: {fileID: 0}
+  health: 200
   isEnemy: 0
   plant: Sunflower
   animation: {fileID: 9100000, guid: 7b6dcc8282f1899458a8bb8ac8eadd02, type: 2}

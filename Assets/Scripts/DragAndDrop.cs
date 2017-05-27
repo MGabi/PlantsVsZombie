@@ -54,7 +54,13 @@ public class DragAndDrop : MonoBehaviour
     {
         if (bought == true)
         {
-            if (this.transform.position.x + this.transform.lossyScale.x/2 >= 0 &&
+            if(this.price == 175 && this.transform.position.x + this.transform.lossyScale.x/2 < 3)
+            {
+                Destroy(this.gameObject);
+                Destroy(otherGO);
+                GlobalVariables.score += price;
+            }
+            else if (this.transform.position.x + this.transform.lossyScale.x/2 >= 0 &&
                 this.transform.position.x - this.transform.lossyScale.x/2 <= 15 &&
                 this.transform.position.y + this.transform.lossyScale.y/2 >= 0 &&
                 this.transform.position.y - this.transform.lossyScale.y/2 <= 4 &&

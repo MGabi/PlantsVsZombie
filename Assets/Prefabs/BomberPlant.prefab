@@ -81,7 +81,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9797297, y: 1}
+    oldSize: {x: 0.9366516, y: 1}
     newSize: {x: 13.05, y: 13.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -99,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 1725611722076490}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8fbef05d1ee5ace4c8cc742ed3223799, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4f10f2e98818cbc4d8da86fe6351988e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1074058047785782, guid: 14a4b68d324b9bc4ab478c87e2423daf, type: 2}
-  interval: 2
+  interval: 3
   plant: ShooterFlower
 --- !u!114 &114336980833328812
 MonoBehaviour:
@@ -134,7 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageSparkle: {fileID: 1468232208503054, guid: 0be34beb08015cd48ae0bde2c15d66cb,
     type: 2}
-  health: 4
+  dieAnimation: {fileID: 0}
+  health: 250
   isEnemy: 0
   plant: ShooterFlower
   animation: {fileID: 9100000, guid: b1984ab7ce4465b44a761d31e50d4f28, type: 2}

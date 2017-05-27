@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: 53222d2bcf2389646b62d3181ba69064
-timeCreated: 1495878815
+timeCreated: 1495880942
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: blueberry_0
+    21300002: blueberry_1
+    21300004: blueberry_2
+    21300006: blueberry_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -40,7 +44,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 447
+  spritePixelsToUnits: 720
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -84,7 +88,59 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: blueberry_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 594
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueberry_1
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 619
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueberry_2
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 619
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueberry_3
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 0
+        width: 605
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

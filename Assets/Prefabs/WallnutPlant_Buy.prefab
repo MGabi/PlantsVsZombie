@@ -80,9 +80,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageSparkle: {fileID: 0}
-  health: 4
+  health: 500
   isEnemy: 0
   plant: 
+  animation: {fileID: 0}
 --- !u!114 &114915544727357366
 MonoBehaviour:
   m_ObjectHideFlags: 1

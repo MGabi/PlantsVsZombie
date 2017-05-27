@@ -81,7 +81,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2396694, y: 1}
+    oldSize: {x: 1, y: 0.827853}
     newSize: {x: 11.37, y: 10.33}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageSparkle: {fileID: 1468232208503054, guid: 0be34beb08015cd48ae0bde2c15d66cb,
     type: 2}
-  health: 4
+  health: 200
   isEnemy: 0
   plant: FreezeFlower
   animation: {fileID: 9100000, guid: bfb6cd534ab232c49835401851718dd1, type: 2}

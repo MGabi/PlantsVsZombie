@@ -15,14 +15,20 @@ public class GameWin : MonoBehaviour {
 
             if (k == true)
             {
-				//UnityEngine.SceneManagement.SceneManager.LoadScene("GameWinScene");
-				Debug.Log("GAME WON!!!");
-				Debug.Log("GAME WON!!!");
-				Debug.Log("GAME WON!!!");
+				
+		
 				int suns = GlobalVariables.score;
 				int bal = System.Int32.Parse(PlayerPrefs.GetString(HelperClass.PREF_BALANCE));
 				PlayerPrefs.SetString(HelperClass.PREF_BALANCE, (bal + suns*10).ToString());
-			}
+
+                StartCoroutine(Win());
+            }
         }
+    }
+
+    IEnumerator Win()
+    {
+        yield return new WaitForSeconds(3);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameWinScene");
     }
 }

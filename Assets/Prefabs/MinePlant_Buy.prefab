@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd645c71600d1d2469f502994697bf1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1384471027033074, guid: de75a5325d8540a4d8698612a7227cbc, type: 2}
+  prefab: {fileID: 1371508551712682, guid: a1778436f6617d944a722681c8c5aa12, type: 2}
   selectionBox: {fileID: 1532623157204874, guid: 01c21d6d241a3144da9e8c3815b8a92a,
     type: 2}
   price: 100

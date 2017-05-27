@@ -81,7 +81,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0065746, y: 1}
+    oldSize: {x: 0.7718833, y: 1}
     newSize: {x: 15.31, y: 15.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -99,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 1384471027033074}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c108f9f64432f142abff317a8baa3a6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 879bbb0cbab347047822a00979bdd6b8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -133,10 +133,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageSparkle: {fileID: 1468232208503054, guid: 0be34beb08015cd48ae0bde2c15d66cb,
     type: 2}
-  health: 1
+  health: 300
   isEnemy: 0
   plant: MineFlower
-  animation: {fileID: 9100000, guid: a8239145f08ca724691c29268dd5f6ee, type: 2}
+  animation: {fileID: 0}
 --- !u!212 &212196434575798796
 SpriteRenderer:
   m_ObjectHideFlags: 1

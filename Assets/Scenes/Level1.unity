@@ -332,6 +332,8 @@ MonoBehaviour:
   pref4: {fileID: 1280396250324902, guid: 693a25187aa01bb45aa679ae78b2ff24, type: 2}
   pref5: {fileID: 1851407120597542, guid: 404f2d48568662f46b774399f59f7447, type: 2}
   pref6: {fileID: 1656107930640278, guid: c17e29847f1247b4988d1be1196bd06d, type: 2}
+  pref7: {fileID: 1133169049730510, guid: 19ea31095289987419a901fabea1380f, type: 2}
+  pref8: {fileID: 1513058494800698, guid: 62d690aa8360c41499b9e2fd681e15cf, type: 2}
   panel: {fileID: 1092143346206022, guid: da437059e21f44f43be8954b7c77564c, type: 2}
   shovel: {fileID: 1388402225486654, guid: 1e579a645257e1546b8b82c9e3b55530, type: 2}
 --- !u!114 &1333068866
@@ -345,7 +347,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f876515284a0c1409227e969d5e5c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pref1: {fileID: 1058214643195356, guid: a6bfaf0ceca41a848b1c6b69fc182b5a, type: 2}
+  corpo: {fileID: 1399219371784398, guid: fb15a439e1a0a6247a084b85113594d4, type: 2}
+  troglo: {fileID: 1327724549555930, guid: d8b641771d1d7e242b018a6fa891efa2, type: 2}
+  scufu: {fileID: 1019949934219424, guid: 8786725e3da925a4895d59948d8da6fc, type: 2}
+  manager: {fileID: 1617610931549798, guid: a9506fa26ec69304388069408a0c8858, type: 2}
+  specialist: {fileID: 1992590264355146, guid: 44d921e0dafa02a48a42cf3193660cb0, type: 2}
+  profesoara: {fileID: 1314896873056054, guid: 7751e06c38c07e64da8082f7e797c4ed, type: 2}
+  directoare: {fileID: 1646497003986714, guid: aaa625021e34abf4682fdf8d61e5a9a2, type: 2}
 --- !u!114 &1333068867
 MonoBehaviour:
   m_ObjectHideFlags: 0
