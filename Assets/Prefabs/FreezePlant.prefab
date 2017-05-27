@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1537988721261034, guid: f4442dae8f0791c428e2b67517a7b372, type: 2}
-  interval: 2
+  interval: 3.5
   plant: FreezeFlower
 --- !u!114 &114882964283131630
 MonoBehaviour:

@@ -81,7 +81,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8821752, y: 1}
+    oldSize: {x: 0.8187919, y: 1}
     newSize: {x: 14.6, y: 16.55}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -99,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 1145168577611728}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7cd61264aceab3b4b96165a156cab80d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 79705fc552592714ea3fad3d193c5df8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b38aab7fc1e2cb4b9ad5aff557974e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1197729460344834, guid: 2f9cfc825cf61d9438035379aff483f1, type: 2}
+  prefab: {fileID: 1017367373375238, guid: 344ad0df2c744904bae005d795df582b, type: 2}
   interval: 5
   plant: Sunflower
 --- !u!114 &114494266195921728

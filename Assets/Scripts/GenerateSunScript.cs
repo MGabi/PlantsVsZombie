@@ -8,7 +8,7 @@ public class GenerateSunScript : MonoBehaviour {
 
     public void Start()
     {
-        InvokeRepeating("Spawn", 10, 10);
+        InvokeRepeating("Spawn", 15, 15);
     }
         
     
@@ -17,6 +17,6 @@ public class GenerateSunScript : MonoBehaviour {
     void Spawn()
     {
         int x = Random.Range(1, 9);
-        Instantiate(prefab, new Vector3(x,-3, 0), Quaternion.identity);
+        Instantiate(prefab, new Vector3(x,5, 0), Quaternion.identity);
     }
 }

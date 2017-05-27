@@ -81,7 +81,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1006776, y: 1}
+    oldSize: {x: 0.92101914, y: 1}
     newSize: {x: 11.37, y: 10.33}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -118,8 +118,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20dcf7e5dac20a4d8e5e8779a39e358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pref1: {fileID: 1192249446313692, guid: e427d7e74d9a2c943b78a875bff08b9c, type: 2}
-  pref2: {fileID: 1479853248856556, guid: 82e26cc1455a99340b9ef906e17b6a05, type: 2}
+  interval: 3
+  launch1: {fileID: 1192249446313692, guid: e427d7e74d9a2c943b78a875bff08b9c, type: 2}
+  fireBeam1: {fileID: 1479853248856556, guid: 82e26cc1455a99340b9ef906e17b6a05, type: 2}
+  launch2: {fileID: 1911134687298172, guid: a1d886bcf3357044f82d84f3c37b783d, type: 2}
+  launch3: {fileID: 1582509670568374, guid: 9ddd5ba0ad2afb9418ce63fa8f7ff1cd, type: 2}
+  fireBeam2: {fileID: 1645376936285262, guid: 7310bbdfca583364b878015ca8223be3, type: 2}
 --- !u!114 &114911711874061094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageSparkle: {fileID: 1468232208503054, guid: 0be34beb08015cd48ae0bde2c15d66cb,
     type: 2}
-  health: 4
+  health: 350
   isEnemy: 0
   plant: ExplodeFlower
   animation: {fileID: 9100000, guid: a30ecad7b44f11c4d9bdd562d85526c9, type: 2}

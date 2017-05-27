@@ -7,7 +7,7 @@ public class SunCollectScript : MonoBehaviour
 
     public void OnMouseDown()
     {
-        GlobalVariables.score += 20;
+        GlobalVariables.score += 25;
         Destroy(this.gameObject);
     }
 

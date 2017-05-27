@@ -14,7 +14,7 @@ public class GeneratePlants_Buy : MonoBehaviour {
     public GameObject panel;
     public GameObject shovel;
 
-    private int i = 5, j = 0;
+    private int i = 8, j = 0;
     void Start () {
 
         

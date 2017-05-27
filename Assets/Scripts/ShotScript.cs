@@ -12,7 +12,7 @@ public class ShotScript : MonoBehaviour {
 
     private void Start()
     {
-        GetPlantType();
+     
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -22,10 +22,7 @@ public class ShotScript : MonoBehaviour {
         {
             if(destroyable == true)
                 Destroy(this.gameObject);
-            if(plant.Equals("ExplodePlant"))
-                other.GetComponent<HealthScript>().DoDamage(other.GetComponent<HealthScript>().health);
-            else
-                other.GetComponent<HealthScript>().DoDamage(damage);
+            other.GetComponent<HealthScript>().DoDamage(damage);
             if (doSlow)
                 {
                     other.GetComponent<SpriteRenderer>().color = new Color32(50, 150, 255, 255);
@@ -36,30 +33,6 @@ public class ShotScript : MonoBehaviour {
         
     }
 
-    private void GetPlantType()
-    {
-        if(plant.Equals("ShooterFlower"))
-        {
-            damage = (float)System.Double.Parse(PlayerPrefs.GetString(HelperClass.PREF_DMG_SHOOTER));
-            destroyable = true;
-            doSlow = false;
-        }
-        else if(plant.Equals("FreezeFlower"))
-        {
-            damage = (float)System.Double.Parse(PlayerPrefs.GetString(HelperClass.PREF_DMG_FREEZE));
-            destroyable = true;
-            doSlow = true;
-        }
-        else if(plant.Equals("MineFlower"))
-        {
-            damage = (float)System.Double.Parse(PlayerPrefs.GetString(HelperClass.PREF_DMG_BOMB));
-            destroyable = true;
-            doSlow = false;
-        }
-        else if(plant.Equals("ExplodePlant"))
-        {
-            destroyable = false;
-            doSlow = false;
-        }
-    }
+    
+    
 }

@@ -54,7 +54,7 @@ public class StartLevel : MonoBehaviour {
 
 	void Spawn()
     {
-        Instantiate(pref1, new Vector3(12, levelMatrix[i][1], 0), Quaternion.identity);
+        Instantiate(pref1, new Vector3(17, levelMatrix[i][1], 0), Quaternion.identity);
         GlobalVariables.ZombieOnLane[levelMatrix[i][1]]++;
         i++;
 

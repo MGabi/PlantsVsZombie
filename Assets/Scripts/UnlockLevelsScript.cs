@@ -18,9 +18,11 @@ public class UnlockLevelsScript : MonoBehaviour {
 		btn4 = GameObject.Find("levelForBtn").GetComponent<Button>();
 		btn5 = GameObject.Find("levelFiveBtn").GetComponent<Button>();
 
-		GlobalVariables.score = 100;
+		GlobalVariables.score = 50;
+        GlobalVariables.Countdown = 10;
 
-		if(PlayerPrefs.GetInt(HelperClass.LEVEL_CURRENT) == 1)
+
+        if (PlayerPrefs.GetInt(HelperClass.LEVEL_CURRENT) == 1)
 		{
 			btn2.interactable = false;
 			btn3.interactable = false;

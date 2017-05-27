@@ -12,7 +12,7 @@ public class GenerateBackground : MonoBehaviour {
 	void Start () {
 		for(int i=0;i<5;i++)
         {
-            for(int j=0;j<10;j++)
+            for(int j=0;j<15;j++)
             {
                 if((i+j)%2==0)
                 {

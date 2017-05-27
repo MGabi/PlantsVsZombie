@@ -4,12 +4,24 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour {
 
-    public static int score = 100;
+    public static int score = 500;
     public static int[][] Matrix;
     public static float Countdown = 11.0f;
     public static int[] ZombieOnLane;
     public static bool spawningFinished = false;
     public static int totalZombies = 0;
+
+    public static bool ExistsZombie(string plant,Transform plantTransf)
+    {
+        if (plant == "ShooterFlower")
+        {
+            if (ZombieOnLane[(int)plantTransf.position.y] > 0)
+                return true;
+            else return false;
+        }
+        else return false;
+
+    }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void OnBeforeSceneLoadRuntimeMethod()
@@ -21,8 +33,8 @@ public class GlobalVariables : MonoBehaviour {
         Matrix = new int[5][];
         for(int i=0;i<5;i++)
         {
-            Matrix[i] = new int[10];
-            for (int j = 0; j < 10; j++)
+            Matrix[i] = new int[15];
+            for (int j = 0; j < 15; j++)
                 Matrix[i][j] = 0;
         }
     }

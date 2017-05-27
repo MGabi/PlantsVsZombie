@@ -55,7 +55,7 @@ public class DragAndDrop : MonoBehaviour
         if (bought == true)
         {
             if (this.transform.position.x + this.transform.lossyScale.x/2 >= 0 &&
-                this.transform.position.x - this.transform.lossyScale.x/2 <= 9 &&
+                this.transform.position.x - this.transform.lossyScale.x/2 <= 15 &&
                 this.transform.position.y + this.transform.lossyScale.y/2 >= 0 &&
                 this.transform.position.y - this.transform.lossyScale.y/2 <= 4 &&
                 GlobalVariables.Matrix[(int)Camera.main.ScreenToWorldPoint(Input.mousePosition).y][(int)Camera.main.ScreenToWorldPoint(Input.mousePosition).x] == 0)

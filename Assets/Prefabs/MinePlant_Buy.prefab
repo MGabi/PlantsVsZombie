@@ -59,7 +59,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0065746, y: 1}
+    oldSize: {x: 0.7718833, y: 1}
     newSize: {x: 15.31, y: 15.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -83,6 +83,7 @@ MonoBehaviour:
   health: 4
   isEnemy: 0
   plant: 
+  animation: {fileID: 0}
 --- !u!114 &114935410213171488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,7 +98,7 @@ MonoBehaviour:
   prefab: {fileID: 1384471027033074, guid: de75a5325d8540a4d8698612a7227cbc, type: 2}
   selectionBox: {fileID: 1532623157204874, guid: 01c21d6d241a3144da9e8c3815b8a92a,
     type: 2}
-  price: 50
+  price: 100
 --- !u!212 &212415527741629330
 SpriteRenderer:
   m_ObjectHideFlags: 1

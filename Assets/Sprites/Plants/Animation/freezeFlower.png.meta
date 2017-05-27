@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6edbdb5f4e4cd33408fbdebe13a9ecd5
-timeCreated: 1492895863
+timeCreated: 1495879254
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,7 @@ TextureImporter:
     21300004: freezeFlower_2
     21300006: freezeFlower_3
     21300008: freezeFlower_4
+    21300010: freezeFlower_5
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -45,7 +46,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 968
+  spritePixelsToUnits: 428
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -91,45 +92,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: freezeFlower_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1235
-        height: 968
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: freezeFlower_1
-      rect:
-        serializedVersion: 2
-        x: 1235
-        y: 0
-        width: 1291
-        height: 968
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: freezeFlower_2
-      rect:
-        serializedVersion: 2
-        x: 2536
-        y: 0
-        width: 1105
-        height: 968
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: freezeFlower_3
       rect:
         serializedVersion: 2
@@ -138,7 +100,7 @@ TextureImporter:
         width: 1242
         height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -151,8 +113,60 @@ TextureImporter:
         width: 1606
         height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 29, y: 0, z: 178, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: freezeFlower_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 495
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: freezeFlower_1
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 0
+        width: 525
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: freezeFlower_2
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 0
+        width: 566
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: freezeFlower_5
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 0
+        width: 540
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []

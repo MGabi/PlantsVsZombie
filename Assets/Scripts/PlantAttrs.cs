@@ -35,8 +35,8 @@ public class PlantAttrs : MonoBehaviour
 	public static int UP_5_EXPLODE = 1000;
 
 	//Level 1
-	public static string SUN_1_HEALTH = "3";
-	public static string SUN_1_COOLDOWN = "5";
+	public static string SUN_1_HEALTH = "200";
+	public static string SUN_1_COOLDOWN = "15";
 
 	public static string SHOOTER_1_HEALTH = "3";
 	public static string SHOOTER_1_DMG = "1";

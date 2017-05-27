@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 48d734e0f8df2f84880293d31277f95d
-timeCreated: 1492882036
+timeCreated: 1495879360
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -44,7 +44,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1521
+  spritePixelsToUnits: 1131
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -93,10 +93,10 @@ TextureImporter:
       name: mineFlower_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 1585
-        height: 1521
+        width: 842
+        height: 1131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,10 +106,10 @@ TextureImporter:
       name: mineFlower_1
       rect:
         serializedVersion: 2
-        x: 1616
+        x: 848
         y: 0
-        width: 1614
-        height: 1521
+        width: 858
+        height: 1131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,10 +119,10 @@ TextureImporter:
       name: mineFlower_2
       rect:
         serializedVersion: 2
-        x: 3230
+        x: 1706
         y: 0
-        width: 1673
-        height: 1521
+        width: 995
+        height: 1131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,10 +132,10 @@ TextureImporter:
       name: mineFlower_3
       rect:
         serializedVersion: 2
-        x: 4913
+        x: 2712
         y: 0
-        width: 1567
-        height: 1521
+        width: 888
+        height: 1131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

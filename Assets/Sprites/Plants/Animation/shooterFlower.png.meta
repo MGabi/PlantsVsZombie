@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8d63b74062bc646449159e6024db062e
-timeCreated: 1492881979
+timeCreated: 1495879051
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,8 @@ TextureImporter:
     21300002: shooterFlower_1
     21300004: shooterFlower_2
     21300006: shooterFlower_3
+    21300008: shooterFlower_4
+    21300010: shooterFlower_5
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -44,7 +46,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1332
+  spritePixelsToUnits: 442
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -90,32 +92,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shooterFlower_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1309
-        height: 1332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: shooterFlower_1
-      rect:
-        serializedVersion: 2
-        x: 1301
-        y: 0
-        width: 1300
-        height: 1332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: shooterFlower_2
       rect:
         serializedVersion: 2
@@ -124,7 +100,7 @@ TextureImporter:
         width: 1364
         height: 1332
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -136,6 +112,58 @@ TextureImporter:
         y: 0
         width: 1301
         height: 1332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shooterFlower_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 426
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shooterFlower_1
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0
+        width: 418
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shooterFlower_4
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 0
+        width: 449
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shooterFlower_5
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 0
+        width: 419
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

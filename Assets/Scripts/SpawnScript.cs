@@ -14,32 +14,9 @@ public class SpawnScript : MonoBehaviour
     void Start()
     {
         interval2 = interval;
-        GetPlantType();
-
-       
     }
 
-    private void GetPlantType()
-    {
-        if(plant.Equals("Sunflower"))
-        {
-            interval = (float)System.Double.Parse(PlayerPrefs.GetString(HelperClass.PREF_SUN_COOLDOWN));
-        }
-        else if(plant.Equals("ShooterFlower"))
-        {
-            Debug.Log("asd: " + PlayerPrefs.GetString(HelperClass.PREF_SPEED_SHOOTER));
-            interval = (float)System.Double.Parse(PlayerPrefs.GetString(HelperClass.PREF_SPEED_SHOOTER));
-            Debug.Log(interval);
-            Debug.Log(interval.ToString());
-        }
-        else if(plant.Equals("FreezeFlower"))
-        {
-            interval = (float)System.Double.Parse(PlayerPrefs.GetString(HelperClass.PREF_SPEED_FREEZE));
-        }
-
-        
-    }
-
+   
     private void Update()
     {
         if (interval2 <= 0)
@@ -48,7 +25,7 @@ public class SpawnScript : MonoBehaviour
                 Spawn();
             else
             {
-                if (GlobalVariables.ZombieOnLane[(int)this.transform.position.y] > 0)
+                if (GlobalVariables.ExistsZombie(plant,this.transform))
                     Spawn();
             }
             interval2 = interval;
