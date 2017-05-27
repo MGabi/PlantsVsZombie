@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +20,6 @@ public class GameWin : MonoBehaviour {
 				Debug.Log("GAME WON!!!");
 				Debug.Log("GAME WON!!!");
 			}
-            
         }
     }
 }
