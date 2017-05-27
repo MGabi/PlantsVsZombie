@@ -627,7 +627,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1229108678}
   m_OnClick:
     m_PersistentCalls:
@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 2038047969}
   - component: {fileID: 2038047968}
   m_Layer: 5
-  m_Name: LevelFiveBtn
+  m_Name: levelFiveBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
